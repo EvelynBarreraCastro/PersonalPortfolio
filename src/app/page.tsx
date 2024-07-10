@@ -45,7 +45,7 @@ export default function Home() {
         </Toolbar>
       </AppBar>
       <Image 
-          src = {  "/trees.webp"}
+          src = {process.env.NEXT_PUBLIC_FILE_LOCATION + "trees.webp"}
           width = {500}
           height ={400}
           alt ="trees"
