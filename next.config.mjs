@@ -9,10 +9,22 @@
 //};
 //export default nextConfig;
 
-const config = {
-    basePath: '/PersonalPortfolio/out',
-    assetPrefix: '/PersonalPortfolio/out/',
+const nextConfig = {
+    // Specify the directory where Next.js will output the build files
+    // It should match with the URL path you want to deploy to on GitHub Pages
+    output: 'out',
+  
+    // Configure images options
+    images: {
+      unoptimized: true,
+    },
+  
+    // Set assetPrefix based on environment variable
+    assetPrefix: process.env.ASSET_PREFIX || '',
+  
+    // Set basePath based on environment variable
+    basePath: process.env.BASE_PATH || '',
   };
   
-  export default config;
+  module.exports = nextConfig;
   
