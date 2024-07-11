@@ -16,7 +16,6 @@ function MyAddress () {
   return (
     <address>{"Contact: 509-733-2415"}</address>
   );
-
 }
 
 function MyButton() {
