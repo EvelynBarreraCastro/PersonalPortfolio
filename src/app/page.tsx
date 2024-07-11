@@ -14,7 +14,7 @@ function MyHeader() {
 
 function MyAddress () {
   return (
-    <address>{"Contact: 509-733-2415"}</address>
+    <address>{"Contact: number"}</address>
   );
 }
 
